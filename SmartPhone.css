@@ -1,0 +1,188 @@
+body {
+    background-image: url("Background.jpg");
+    background-size: cover;
+    font-family: 'Lato', sans-serif; /* Fonte mais moderna */
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+    color: white;
+    padding: 10px 20px;
+    position: fixed; /* Barra fixa no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garantir que a barra fique na frente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 19;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: lightgray; /* Cor ao passar o mouse */
+}
+
+.container {
+    margin: 80px auto;
+    padding: 20px;
+    max-width: 1200px;
+    color:#ccc;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transições suaves */
+}
+.product-image hover {
+    filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); /* Sombra mais intensa */
+}
+
+.config-section {
+    flex: 1;
+    margin-left: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.product-characteristics {
+    margin-top: 30px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+.buy-button {
+    background-color: #0078D7;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #005BB5;
+    transform: scale(1.2);
+}
+
+.memory-options {
+    display: flex;
+    flex-direction: column; /* Coloca os botões em uma coluna */
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-bottom: 15px;
+}
+
+.memory-button {
+    padding: 25px 30px; /* Aumenta o tamanho dos botões */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 50%; /* Faz os botões ocuparem toda a largura do container */
+}
+
+.memory-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.memory-button.selected {
+    background-color: #0078D7;
+    color: white;
+    border-color: #005BB5;
+}
+
+.color-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.color-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.color-button:hover {
+    transform: scale(1.2);
+}
+
+.color-button.selected {
+    border: 3px solid #0078D7;
+}
+
+#final-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+

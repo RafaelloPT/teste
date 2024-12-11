@@ -1,0 +1,148 @@
+body{
+    background-image: url("Background.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.container {
+        display: flex;
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        height: auto; /* Altura da tela */
+        color: white; /* Texto branco */
+        font-family: Arial, sans-serif;
+        justify-content: center; /* Centraliza verticalmente */
+}
+    
+    /* Estilo para o título */
+h1 {
+        font-size: 3em;
+        margin-bottom: 40px;
+}
+    
+    /* Agrupamento dos botões */
+.button-group {
+        display: flex;
+        gap: 20px; /* Espaço entre os botões */
+}
+    
+    /* Estilo dos botões */
+button {
+        font-size: 16px;
+        padding: 12px 25px; /* Espaçamento interno */
+        border-radius: 50px; /* Bordas arredondadas */
+        border: 1.5px solid white; /* Borda fina branca */
+        background-color: transparent; /* Fundo transparente */
+        color: white; /* Texto branco */
+        cursor: pointer;
+        transition: all 0.3s ease; /* Transições suaves */
+}
+    
+    /* Botão preenchido */
+button.filled {
+        background-color: white; /* Fundo branco */
+        color: black; /* Texto preto */
+        border: none; /* Sem borda */
+}
+    
+    /* Efeito hover */
+button:hover {
+        background-color: white; /* Fundo branco */
+        color: black; /* Texto preto */
+}
+/* Container principal */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Ocupa toda a altura da janela */
+    overflow: visible;
+    position: relative;
+    text-align: center;
+}
+
+/* Texto sobre a imagem */
+.image-container .text-overlay {
+    margin-bottom: 20px; /* Espaçamento entre o texto e a imagem */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.image-container .text-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.image-container .text-overlay button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.image-container .text-overlay button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Imagem do telemóvel */
+.image-container img {
+    max-width: 90%; /* Ajusta a largura proporcionalmente */
+    height: auto; /* Mantém as proporções da imagem */
+    margin-top: 20px; /* Reduz o espaço superior */
+    display: block; /* Garante centralização no flex container */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transições suaves */
+}
+
+/* Efeito ao passar o rato */
+.image-container img:hover {
+    filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); /* Sombra mais intensa */
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+    color: white;
+    padding: 10px 20px;
+    position: fixed; /* Barra fixa no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garantir que a barra fique na frente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: lightgray; /* Cor ao passar o mouse */
+}
+
